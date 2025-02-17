@@ -2,7 +2,9 @@ const fs = require("fs");
 
 const write = () => {
     const data = "i am new data";
-    fs.writeFile('./data.txt', data, (err)=>{
+    fs.writeFile('./data.txt', data, (err
+        
+    )=>{
         if (err)
             console.error(err);
         else
