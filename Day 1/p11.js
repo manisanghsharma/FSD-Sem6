@@ -5,6 +5,10 @@ const read = async() => {
     console.log(data);
 }
 
-const write
+const write = async(str) => {
+    await fs.writeFile("./data.txt", str)
+    console.log("File written successfully");
+}
 
 read();
+write("Hello World");
