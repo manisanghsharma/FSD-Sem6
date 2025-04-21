@@ -1,7 +1,14 @@
 const express = require("express");
 const fs = require("fs/promises");
 const app = express();
+const cors = require("cors");
 app.use(express.json());
+app.use(
+	cors(
+		(AllowedHeaders = ["Content-Type", "Authorization"]),
+		(AllowedOrigins = ["http://localhost:7001"])
+	)
+);
 
 let users = [];
 const readdata = async () => {
