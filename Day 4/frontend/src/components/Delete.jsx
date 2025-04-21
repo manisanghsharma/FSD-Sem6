@@ -14,7 +14,7 @@ const Delete = () => {
         
         try {
             const id = e.target.id.value
-            await axios.delete(`http://localhost:9000/users/${id}`)
+            await axios.delete(`https://fsd-sem6.onrender.com/users/${id}`)
             setSuccess(true)
             e.target.reset()
         } catch (error) {

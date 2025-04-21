@@ -9,7 +9,7 @@ const View = () => {
     const handleView = async () => {
         try {
             setLoading(true)
-            const response = await axios.get('http://localhost:9000/users')
+            const response = await axios.get('https://fsd-sem6.onrender.com/users')
             setUsers(response.data)
             setError(null)
         } catch (err) {

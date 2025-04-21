@@ -17,7 +17,7 @@ const Update = () => {
             const name = e.target.name.value
             const age = e.target.age.value
             const users = {name, age}
-            await axios.put(`http://localhost:9000/users/${id}`, users)
+            await axios.put(`https://fsd-sem6.onrender.com/users/${id}`, users)
             setSuccess(true)
         } catch (error) {
             console.error('Update error:', error)
